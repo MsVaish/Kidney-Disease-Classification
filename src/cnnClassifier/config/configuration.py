@@ -1,9 +1,12 @@
 from cnnClassifier.constants import *
 import os
-from cnnClassifier.utils.common import read_yaml, create_directories
+from cnnClassifier.utils.common import read_yaml, create_directories,save_json
 from cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                 PrepareBaseModelConfig,
-                                                TrainingConfig)
+                                                TrainingConfig,
+                                                EvaluationConfig)
+
+
 class ConfigurationManager:
     def __init__(
         self,
@@ -30,6 +33,9 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+    
+
+
     
     def get_prepare_base_model_config(self) -> PrepareBaseModelConfig:
         config = self.config.prepare_base_model
@@ -76,13 +82,13 @@ class ConfigurationManager:
     
 
 
-    # def get_evaluation_config(self) -> EvaluationConfig:
-    #     eval_config = EvaluationConfig(
-    #         path_of_model="artifacts/training/model.h5",
-    #         training_data="artifacts/data_ingestion/kidney-ct-scan-image",
-    #         mlflow_uri="https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow",
-    #         all_params=self.params,
-    #         params_image_size=self.params.IMAGE_SIZE,
-    #         params_batch_size=self.params.BATCH_SIZE
-    #     )
-    #     return eval_config
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",
+            training_data="artifacts/data_ingestion/kidney-ct-scan-image",
+            mlflow_uri="https://dagshub.com/MsVaish/Kidney-Disease-Classification.mlflow",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config

@@ -3,9 +3,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://drive.google.com/file/d/1oq-vYP-OzV85Nc4v6c-R5tYblyuGGJqy/view?usp=sharing
-  # error of file access -  If you're working with big files (in my case was a >1gb file), you can solve by copying the url from 'Download anyway' button in Google Drive.
-  # source_URL: https://drive.usercontent.google.com/download?id=1oq-vYP-OzV85Nc4v6c-R5tYblyuGGJqy&export=download&authuser=0&confirm=t&uuid=1f1e2cde-1749-4d68-9e0f-0957fa3da224&at=APZUnTVWGZbuQ7rSqNHPkvut1rcJ%3A1710951134835
+  source_URL: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 
