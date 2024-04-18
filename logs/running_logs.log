@@ -1339,3 +1339,16 @@ x==========x]
 [2024-04-15 21:21:06,553: INFO: _internal: 127.0.0.1 - - [15/Apr/2024 21:21:06] "POST /predict HTTP/1.1" 200 -]
 [2024-04-15 21:21:23,134: INFO: _internal: 127.0.0.1 - - [15/Apr/2024 21:21:23] "POST /predict HTTP/1.1" 200 -]
 [2024-04-15 21:21:45,110: INFO: _internal: 127.0.0.1 - - [15/Apr/2024 21:21:45] "POST /predict HTTP/1.1" 200 -]
+[2024-04-18 15:25:19,637: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8084
+ * Running on http://192.168.29.47:8084]
+[2024-04-18 15:25:19,637: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-04-18 15:25:19,672: INFO: _internal: 127.0.0.1 - - [18/Apr/2024 15:25:19] "GET / HTTP/1.1" 200 -]
+[2024-04-18 15:32:09,306: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8084
+ * Running on http://192.168.29.47:8084]
+[2024-04-18 15:32:09,307: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-04-18 15:32:10,575: INFO: _internal: 127.0.0.1 - - [18/Apr/2024 15:32:10] "GET / HTTP/1.1" 200 -]
+[2024-04-18 15:32:33,594: INFO: _internal: 127.0.0.1 - - [18/Apr/2024 15:32:33] "POST /predict HTTP/1.1" 200 -]
